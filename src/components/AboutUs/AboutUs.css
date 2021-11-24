@@ -1,0 +1,27 @@
+.aboutUs {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.aboutUsPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(236, 240, 245, 1);
+}
+
+.aboutTitle strong {
+  font-size: 15px;
+}
+
+.aboutDescription p  {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.description p span {
+  display: block;
+  /* margin-top: 15px; */
+}

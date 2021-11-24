@@ -1,0 +1,300 @@
+.loaderPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #003d827a;
+}
+
+/* .loaderCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid rgba(48, 51, 107,1.0);
+    background: radial-gradient(rgba(72, 52, 212,1.0), rgba(104, 109, 224,1.0));
+} */
+
+/* .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(rgba(48, 51, 107,1.0), rgba(72, 52, 212,1.0));
+} */
+
+
+/* #region book loader */
+
+.loader {
+    --background: linear-gradient(135deg, #23C4F8, #275EFE);
+    --shadow: rgba(39, 94, 254, 0.28);
+    --text: #6C7486;
+    --page: rgba(255, 255, 255, 0.36);
+    --page-fold: rgba(255, 255, 255, 0.52);
+    --duration: 3s;
+    width: 200px;
+    height: 140px;
+    position: relative;
+}
+
+.loader:before, .loader:after {
+    --r: -6deg;
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 120px;
+    top: 80%;
+    box-shadow: 0 16px 12px var(--shadow);
+    transform: rotate(var(--r));
+}
+
+.loader:before {
+    left: 4px;
+}
+
+.loader:after {
+    --r: 6deg;
+    right: 4px;
+}
+
+.loader div {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+    perspective: 600px;
+    box-shadow: 0 4px 6px var(--shadow);
+    background-image: var(--background);
+}
+
+.loader div ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.loader div ul li {
+    --r: 180deg;
+    --o: 0;
+    --c: var(--page);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform-origin: 100% 50%;
+    color: var(--c);
+    opacity: var(--o);
+    transform: rotateY(var(--r));
+    -webkit-animation: var(--duration) ease infinite;
+    animation: var(--duration) ease infinite;
+}
+
+.loader div ul li:nth-child(2) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-2;
+    animation-name: page-2;
+}
+
+.loader div ul li:nth-child(3) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-3;
+    animation-name: page-3;
+}
+
+.loader div ul li:nth-child(4) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-4;
+    animation-name: page-4;
+}
+
+.loader div ul li:nth-child(5) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-5;
+    animation-name: page-5;
+}
+
+.loader div ul li svg {
+    width: 90px;
+    height: 120px;
+    display: block;
+}
+
+.loader div ul li:first-child {
+    --r: 0deg;
+    --o: 1;
+}
+
+.loader div ul li:last-child {
+    --o: 1;
+}
+
+.loader span {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--text);
+}
+
+
+@keyframes page-2 {
+    0% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    35%, 100% {
+        opacity: 0;
+    }
+
+    50%, 100% {
+        transform: rotateY(0deg);
+    }
+}
+
+
+@keyframes page-3 {
+    15% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    50%, 100% {
+        opacity: 0;
+    }
+
+    65%, 100% {
+        transform: rotateY(0deg);
+    }
+}
+
+
+@keyframes page-4 {
+    30% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    65%, 100% {
+        opacity: 0;
+    }
+
+    80%, 100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes page-5 {
+    45% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    80%, 100% {
+        opacity: 0;
+    }
+
+    95%, 100% {
+        transform: rotateY(0deg);
+    }
+}
+
+/* #endregion book loader */
+
+
+
+.loaderText {
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #003d82;
+    text-shadow: 1px 1px 0 #FFF;
+    background: #003d8281;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #003d8281;
+    width: 0ch;
+    animation: loaderText 1.5s infinite ease-in-out;
+    white-space: none;
+    letter-spacing: normal;
+    overflow-x: hidden;   
+}
+
+@keyframes loaderText {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 8ch;
+    }
+}
+
+
+#bitcoin {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888888;
+}
+
+.path {
+    stroke-dasharray: 2110;
+    stroke-dashoffset: 2110;
+    stroke-width: 15;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+    fill-opacity: 0;
+    stroke: #003d82;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 2110;
+        opacity: 0;
+        stroke: #003d82;
+    }
+
+    15% {
+        opacity: 1;
+        stroke: #003d82;
+    }
+
+    70% {
+        opacity: 1;
+        stroke: #003d82;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+        stroke: #003d82;
+    }
+}

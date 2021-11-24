@@ -1,0 +1,22 @@
+.details {
+  height: 100vh;
+}
+
+.detailsPage {
+  height: 100vh;
+}
+
+.detailsImg img {
+  /* 842 × 584 */
+  width: 290px;
+}
+
+.detailsDescription p  {
+  margin-top: 10px;
+  padding: 13px;
+}
+
+.description p span {
+  display: block;
+  margin-bottom: 15px;
+}

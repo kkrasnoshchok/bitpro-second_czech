@@ -1,0 +1,395 @@
+/* #region Start */
+
+.start {
+  height: 100vh;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.pageBG {
+  position: absolute;
+  z-index: 0;
+}
+
+.pageBG_1 {
+  left: -100px;
+  top: -50px;
+}
+
+.pageBG_2 {
+  right: -100px;
+  top: -50px;
+}
+
+.pageBG_3 {
+  right: -100px;
+  bottom: -50px;
+}
+
+.pageBG_4 {
+  left: -100px;
+  bottom: -50px;
+}
+
+.pageBG_grafik {
+  bottom: 0;
+}
+
+.pageBG_grafik img {
+  width: 400px;
+  opacity: 0.4;
+}
+
+.pageBG_net img {
+  opacity: 0.15;
+}
+
+.pageBG_net2 {
+  bottom: 0;
+}
+
+.pageBG_net2 img {
+  opacity: 0.16;
+  width: 400px;
+}
+
+.pageBG_grafik2 {
+  bottom: 0;
+  z-index: 0;
+}
+
+.pageBG_grafik2 img {
+  opacity: 0.16;
+  width: 400px;
+}
+
+
+.pageBG_1 img,
+.pageBG_2 img,
+.pageBG_3 img,
+.pageBG_4 img {
+  width: 200px;
+  opacity: 0.2;
+}
+
+.main {
+  position: relative;
+  z-index: 1000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: rgba(223, 249, 251, .6); */
+}
+
+/* #region main */
+
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #E0E5EC;
+  text-shadow: 0px 0px 5px rgb(163, 177, 198, .7), 0px 0px 0px rgba(255, 255, 255, 1);
+  background: #003d82;
+  box-shadow: 0px 0px 10px #003d82;
+  padding: 10px 15px;
+}
+
+.title strong {
+  font-size: 21px;
+  /* color: #fff113; */
+  margin: 0;
+  padding: 0;
+}
+
+.title p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.mainDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDescription p {
+  margin-top: 16px;
+  padding: 15px 10px;
+}
+
+.description {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12.5px;
+  padding: 0px 20px;
+}
+
+.description p {
+  text-shadow: 1px 1px 0 #FFF;
+  color: #003d82;
+  background: #003d820c;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+}
+
+.mainButton {
+  cursor: pointer;
+  padding: 4px;
+  margin-top: 25px;
+  border-radius: 15px;
+  background: transparent;
+  box-shadow: 0px 0px 10px #BABECC, 0px 5px 0px #BABECC;
+  background: #003d8270;
+  transition: all .4s ease-in-out;
+}
+
+.mainButton button {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 15px;
+  background: #003d8260;
+  color: rgba(223, 249, 251, 1.0);
+  /* background: #003d82; */
+}
+
+.mainButton:hover {
+  transform: translateY(10px);
+  box-shadow: none;
+  /* border: 1px solid #BABECC; */
+}
+
+.arrowIcon {
+  font-size: 30px;
+  animation: iconButtonAnimation 1s ease-in-out infinite;
+}
+
+@keyframes mainButtonAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+    box-shadow: none;
+  }
+
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0px 10px 0px #7c9ec5;
+  }
+
+}
+
+@keyframes iconButtonAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* #endregion main */
+
+/* #endregion Start */
+
+/* #region media */
+
+@media (min-width:375px) {
+  .mainTitle strong {
+    font-size: 25px;
+  }
+
+  .mainButton button {
+    font-size: 30px;
+    padding: 18px 35px;
+  }
+
+  .mainDescription {
+    margin-top: 0px;
+  }
+
+  .conclusionButton button {
+    font-size: 14px;
+  }
+
+  .formInner {
+    height: 100vh;
+  }
+
+  .formInput {
+    font-size: 18px !important;
+    margin-top: 12px !important;
+  }
+
+  .submitWrapper {
+    margin-top: 25px !important;
+  }
+
+  .formSubmit {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width:414px) {
+  .mainTitle strong {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .MuiTypography-root.MuiTypography-body1.css-ahj2mt-MuiTypography-root {
+    font-size: 16px !important;
+  }
+
+  .css-frejtb-MuiTypography-root,
+  .css-1mwgx0-MuiTypography-root {
+    font-size: 22px !important;
+  }
+
+  .conclusionButton button {
+    font-size: 16px !important;
+  }
+
+  .formInput {
+    font-size: 20px !important;
+    margin-top: 15px !important;
+  }
+  .formSubmit {
+    font-size: 21px !important;
+  }
+}
+
+@media (min-width:768px) {
+  .title strong {
+    font-size: 50px !important;
+  }
+  .aboutTitle strong {
+    font-size: 35px !important;
+  }
+
+  #bitcoin svg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .pageBG_grafik img {
+    width: 800px;
+  }
+
+  .mainButton {
+    padding: 10px;
+    border-radius: 60px;
+  }
+
+  .mainButton button {
+    font-size: 50px;
+    padding: 18px 35px;
+    border: 5px solid #fff;
+    border-radius: 60px;
+  }
+
+  .arrowIcon {
+    font-size: 90px;
+  }
+
+  .mainDescription {
+    margin-top: 20px;
+  }
+
+  .description {
+    font-size: 25px;
+    padding: 0px 50px;
+  }
+}
+
+@media (min-width:1024px) and (max-height:600px) {}
+
+@media (min-width:1024px) {
+  .mainTitle strong {
+    font-size: 120px;
+  }
+
+  .mainTitle p {
+    font-size: 60px;
+  }
+
+  .mainButton {
+    margin-top: 50px;
+  }
+
+  .mainButton button {
+    padding: 25px 60px;
+    font-size: 65px;
+  }
+
+  .mainDescription {
+    margin-top: 35px;
+  }
+
+  .description {
+    font-size: 40px;
+    padding: 0px 80px;
+  }
+
+  .description p {
+    border-radius: 50px;
+  }
+}
+
+@media (min-width:1280px) {
+  .mainTitle strong {
+    font-size: 60px;
+  }
+
+  .mainTitle p {
+    font-size: 25px;
+  }
+
+  .mainButton {
+    margin-top: 50px;
+  }
+
+  .mainButton button {
+    padding: 10px 60px;
+    font-size: 40px;
+  }
+
+  .mainDescription {
+    margin-top: 15px;
+  }
+
+  .description {
+    font-size: 22px;
+    padding: 0px 400px;
+  }
+
+  .description p {
+    border-radius: 50px;
+  }
+}
+
+/* #endregion media */

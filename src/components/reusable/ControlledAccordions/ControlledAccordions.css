@@ -1,0 +1,27 @@
+.accordion {
+    margin-top: 15px;
+    width: 95%;
+}
+
+.MuiTypography-root.MuiTypography-body1.css-ahj2mt-MuiTypography-root {
+    font-size: 12px;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+    margin: 0 !important;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+    padding: 0px 8px 10px;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+    border-radius: 15px;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    box-shadow: 3px 3px 5px #BABECC, -5px -5px 10px #FFF !important;
+    color: #003d82 !important;
+    text-shadow: 1px 1px 0 #FFF !important;
+    background: #003d822f !important;
+}
