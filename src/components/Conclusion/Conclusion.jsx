@@ -48,13 +48,12 @@ function Conclusion(props) {
             <div className="conclusionDescription description">
               <p>
                 <span>
-                  итак, мы познакомили вас с основной вводной информацией,
-                  которая даст вам <strong>успешный старт.</strong>
+                  Představili jsme vám tedy základní úvodní informace, které vám
+                  poskytnou <strong>úspěšný start.</strong>
                 </span>
                 <span>
                   <strong>
-                    подведем короткий итог и вы сможете создать аккаунт трейдера
-                    на нашей платформе :
+                  pojďme si to shrnout a můžete si vytvořit účet obchodníka na naší platformě :
                   </strong>
                 </span>
               </p>
@@ -85,7 +84,7 @@ function Conclusion(props) {
             </div> */}
             <div className="mainButton conclusionButton">
               <button onClick={setQuizState}>
-                <p>регистрация аккаунта трейдера</p>
+                <p>Registrace účtu</p>
               </button>
             </div>
           </main>

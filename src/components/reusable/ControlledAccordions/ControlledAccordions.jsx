@@ -27,17 +27,15 @@ export default function ControlledAccordions() {
           id="panel1bh-header"
         >
           <Typography sx={{ width: "95%", flexShrink: 0 }}>
-            1. После регистрации
+            1. Po registraci
           </Typography>
           {/* <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography> */}
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <strong>
-              ваш персональный менеджер позвонит вам в течении 30 минут,
-            </strong>
-            обязательно поднимите трубку и выслушайте информацию, которую он
-            предоставит.
+            vám do 30 minut zavolá <strong>váš osobní manažer,</strong>{" "}
+            nezapomeňte zvednout telefon a poslechnout si informace, které
+            poskytuje.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -51,7 +49,7 @@ export default function ControlledAccordions() {
           id="panel2bh-header"
         >
           <Typography sx={{ width: "90%", flexShrink: 0 }}>
-            2. Никаких рисков!
+            2. Žádná rizika!
           </Typography>
           {/* <Typography sx={{ color: "text.secondary" }}>
             You are currently not an owner
@@ -59,8 +57,8 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            пока вы не свяжетесь с вашим трейдером, не делайте ничего
-            самостоятельно, вы можете потерять свои деньги.
+            Dokud svého obchodníka nekontaktujete, sami nic nedělejte, mohli
+            byste o své peníze přijít.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -74,7 +72,7 @@ export default function ControlledAccordions() {
           id="panel3bh-header"
         >
           <Typography sx={{ width: "90%", flexShrink: 0 }}>
-            3. Криптовалюта - ?
+            3. Kryptoměna - ?
           </Typography>
           {/* <Typography sx={{ color: "text.secondary" }}>
             Filtering has been entirely disabled for whole web server
@@ -82,10 +80,9 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            - это еще очень молодая сфера, в которой вы можете начать с
-            небольшой суммы и заработать внушительный капитал за счет
-            колоссального роста или падения, мы зарабатываем даже тогда, когда
-            рынок падает.
+            - je stále velmi mladá oblast, ve které můžete začít s malou částkou
+            a vydělat působivý kapitál prostřednictvím kolosálního vzestupu nebo
+            poklesu, vyděláváme, i když trh klesá.
           </Typography>
         </AccordionDetails>
       </Accordion>

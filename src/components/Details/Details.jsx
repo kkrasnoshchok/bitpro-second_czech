@@ -52,25 +52,22 @@ function Details(props) {
             <div className="detailsDescription description">
               <p>
                 <span>
-                  <strong>после регистрации на платформе - </strong>
-                  вы получаете доступ ко всем инструментам.
+                  <strong>Po registraci</strong> na platformě získáte přístup ke všem nástrojům.
                 </span>
                 <span>
-                  так же к вам будет
-                  <strong> прикреплен ваш трейдер,</strong> который ответит на
-                  все вопросы и введет вас в мир торговли.
+                  bude k vám připojen i <strong>váš obchodník,</strong> který
+                  vám zodpoví všechny otázky a uvede vás do světa obchodování
                 </span>
               </p>
               <p>
                 <strong>
-                  он будет сопровождать вас 24/7 и лично контролировать ваш
-                  портфель.
+                  bude vás 24/7 doprovázet a osobně sledovat vaše portfolio.
                 </strong>
               </p>
             </div>
             <div className="mainButton">
               <button onClick={setQuizState}>
-                <p>далее</p>
+                <p>Dále</p>
                 <IoIosArrowForward className="arrowIcon" />
               </button>
             </div>

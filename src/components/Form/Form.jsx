@@ -91,7 +91,7 @@ function Form(props) {
             <div className="pageBG pageBG_grafik2">
               <img src={grafik2} alt="" />
             </div>
-            <div className="formTitle title">регистрация аккаунта трейдера</div>
+            <div className="formTitle title">registrace účtu obchodníka</div>
             <form className="form" onSubmit={(e) => submit(e)}>
               <input
                 className="formInput formName"
@@ -99,7 +99,7 @@ function Form(props) {
                 id="first_name"
                 value={data.first_name}
                 type="text"
-                placeholder="Имя"
+                placeholder="Jméno"
               />
               <input
                 className="formInput formSurname"
@@ -107,7 +107,7 @@ function Form(props) {
                 id="last_name"
                 value={data.last_name}
                 type="text"
-                placeholder="Surname"
+                placeholder="Příjmení"
               />
               <input
                 className="formInput formEmail"
@@ -115,7 +115,7 @@ function Form(props) {
                 id="email"
                 value={data.email}
                 type="email"
-                placeholder="Email"
+                placeholder="E-mail"
               />
               <input
                 className="formInput formPhone"
@@ -123,11 +123,11 @@ function Form(props) {
                 id="phone"
                 value={data.phone}
                 type="tel"
-                placeholder="Phone"
+                placeholder="Telefon"
               />
               <div className="submitWrapper">
                 <button type="submit" className="formSubmit">
-                  регистрация
+                  Registrace účtu
                 </button>
               </div>
             </form>

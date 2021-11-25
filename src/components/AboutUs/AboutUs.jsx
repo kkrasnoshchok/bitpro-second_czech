@@ -46,31 +46,30 @@ function AboutUs(props) {
           </div> */}
           <main className="aboutMain main">
             <div className="aboutTitle title">
-              <strong>пару слов о нашей команде : </strong>
+              <strong>Pár slov o našem týmu :</strong>
             </div>
             <div className="aboutDescription description">
               <p>
                 <span>
-                  мы без преувеличения{" "}
-                  <strong>эксперты в мире криптовалют.</strong>
+                  jsme bez nadsázky{" "}
+                  <strong>odborníci na svět kryptoměn.</strong>
                 </span>
                 <span>
-                  многолетний опыт торговли позволяет нам делать
-                  <strong> точные прогнозы </strong> на те или иные монеты.
+                  dlouholeté obchodní zkušenosti nám umožňují dělat <strong> přesné predikce </strong> pro určité coiny.
                 </span>
                 <span>
-                  мы ищем перспективные стартапы и <strong>инвестируем</strong>{" "}
-                  в них, а так же имеем{" "}
-                  <strong>колоссальный опыт в торговле с фьючерсами.</strong>
+                  hledáme nadějné startupy a <strong>investujeme</strong> do
+                  nich a také máme{" "}
+                  <strong>obrovské zkušenosti s obchodováním s futures.</strong>
                 </span>
               </p>
               <p>
-                <strong>наша статистика 95% успешных сделок.</strong>
+                <strong>naše statistiky 95% úspěšných transakcí.</strong>
               </p>
             </div>
             <div className="mainButton">
               <button onClick={setQuizState}>
-                <p>далее</p>
+                <p>Dále</p>
                 <IoIosArrowForward className="arrowIcon" />
               </button>
             </div>

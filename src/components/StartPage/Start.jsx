@@ -14,50 +14,38 @@ export default function Start() {
   };
   return (
     <div className="start">
-      {/* <div className="pageBG pageBG_1">
-        <img src={btc} alt="" />
-      </div>
-      <div className="pageBG pageBG_2">
-        <img src={btc} alt="" />
-      </div>
-      <div className="pageBG pageBG_3">
-        <img src={btc} alt="" />
-      </div> */}
       <div className="pageBG pageBG_2">
         <img src={btc} alt="" />
       </div>
       <div className="pageBG pageBG_grafik">
-              <img src={graf} alt="" />
-            </div>
+        <img src={graf} alt="" />
+      </div>
       <main className="startMain main">
         <div className="mainTitle title">
-          <strong>добро пожаловать!</strong>
+          <strong>Vítejte</strong>
         </div>
         <div className="mainDescription description">
           <p>
-            если вы хотите
-            {" "}
-            <strong>
-               научиться зарабатывать и инвестировать в криптовалюту,
-            </strong>{" "}
-            то вы попали в нужное место.
+            pokud se chcete pak{" "}
+            <strong>naučit vydělávat a investovat do kryptoměny,</strong> jste
+            na správném místě.
           </p>
           <p>
-            наше приложение даёт <strong>возможность зарабатывать</strong>{" "}
-            тысячам людей со всего земного шара, если вы хотите
-            <strong>умножить свой капитал</strong> в несколько раз{" "}
-            <strong>всего за месяц,</strong> тогда вы попали в нужное место.
+            Naše aplikace umožňuje lidem z celého světa{" "}
+            <strong>vydělávat peníze.</strong> Pokud chcete{" "}
+            <strong>znásobit svůj kapitál</strong> několikrát{" "}
+            <strong>za pouhý měsíc,</strong> pak jste na správném místě.
           </p>
 
           <p>
-            сейчас мы пошагово объясним вам все принципы работы, просим вас
-            очень <strong>внимательно изучить каждый шаг.</strong>
+            Nyní vám vysvětlíme všechny principy práce krok za krokem, žádáme
+            vás, <strong>abyste si každý krok pečlivě prostudovali.</strong>
           </p>
         </div>
 
         <div className="mainButton">
           <button onClick={setQuizState} className="">
-            <p>начать</p>
+            <p>Začít</p>
             <IoIosArrowForward className="arrowIcon" />
           </button>
         </div>
