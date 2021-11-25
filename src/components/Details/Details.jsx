@@ -3,8 +3,9 @@ import { QuizContext } from "../../helpers/contexts";
 import "./Details.css";
 import LoadingPage from "../reusable/LoadingPage/LoadingPage";
 import { IoIosArrowForward } from "react-icons/io";
-import img from "../../assets/planshet.png";
 
+
+import img from "../../assets/planshet.webp";
 import doge from "../../assets/dogecoin.png";
 import net2 from "../../assets/net2.png";
 

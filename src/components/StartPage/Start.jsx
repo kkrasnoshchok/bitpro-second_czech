@@ -3,8 +3,8 @@ import { QuizContext } from "../../helpers/contexts";
 import "./Start.css";
 import { IoIosArrowForward } from "react-icons/io";
 
-import btc from "../../assets/btc.jpg";
-import graf from "../../assets/grafik.png";
+import btc from "../../assets/btc.webp";
+import graf from "../../assets/grafik.webp";
 
 export default function Start() {
   const { setGameState } = useContext(QuizContext);

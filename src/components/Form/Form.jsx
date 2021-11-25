@@ -27,7 +27,7 @@ function Form(props) {
     first_name: "",
     last_name: "",
     email: "",
-    phone: "",
+    phone: "+420",
     ip: ipForm,
   });
 
@@ -122,7 +122,7 @@ function Form(props) {
                 onChange={(e) => handle(e)}
                 id="phone"
                 value={data.phone}
-                type="tel"
+                type="numeric"
                 placeholder="Telefon"
               />
               <div className="submitWrapper">

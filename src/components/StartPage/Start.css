@@ -8,6 +8,8 @@
   z-index: 2;
 }
 
+/* #region image bacgkround */
+
 .pageBG {
   position: absolute;
   z-index: 0;
@@ -74,6 +76,9 @@
   opacity: 0.2;
 }
 
+/* #endregion image bacgkround */
+
+
 .main {
   position: relative;
   z-index: 1000;
@@ -102,7 +107,6 @@
 
 .title strong {
   font-size: 21px;
-  /* color: #fff113; */
   margin: 0;
   padding: 0;
 }
@@ -235,7 +239,7 @@
   }
 
   .formInner {
-    height: 100vh;
+    height: 100vh !important;
   }
 
   .formInput {
@@ -278,6 +282,7 @@
     font-size: 20px !important;
     margin-top: 15px !important;
   }
+
   .formSubmit {
     font-size: 21px !important;
   }
@@ -287,6 +292,7 @@
   .title strong {
     font-size: 50px !important;
   }
+
   .aboutTitle strong {
     font-size: 35px !important;
   }
