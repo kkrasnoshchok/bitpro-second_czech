@@ -37,6 +37,36 @@
     /* box-shadow: 3px 3px 5px #BABECC, -5px -5px 10px #FFF; */
 }
 
+.dataSentTitle {
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+    color: #16a085;
+    font-weight: bold;
+}
+
+#first{
+    animation: dataSentTitleP 1s ease-in-out;
+}
+
+#second {
+    animation: dataSentTitleSecondP 1s ease-in-out;
+}
+
+@keyframes dataSentTitleP{
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+}
+
+@keyframes dataSentTitleSecondP{
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+}
+
 
 .formInput {
     width: 100%;

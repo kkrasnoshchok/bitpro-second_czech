@@ -14,14 +14,14 @@ import Form from "./components/Form/Form";
 
 // declaring App function
 function App() {
-  const [gameState, setGameState] = useState("start");
+  const [gameState, setGameState] = useState("reg");
   //creating IP state
   const [ip, setIP] = useState("");
 
   //creating function to load ip address from the API
   const getData = async () => {
     const res = await axios.get("https://geolocation-db.com/json/");
-    console.log(res.data);
+    // console.log(res.data);
     setIP(res.data.IPv4);
   };
 
