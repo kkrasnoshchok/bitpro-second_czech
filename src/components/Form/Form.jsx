@@ -10,7 +10,7 @@ import grafik2 from "../../assets/grafik2.png";
 function Form(props) {
   const url = new URL("https://cryp.im/leads");
   const ipForm = props.ipForm;
-  // const reservUrl = "https://cryp.im/api/v1/docs#apiv1webconversion";
+  const reservUrl = "https://cryp.im/api/v1/docs#apiv1webconversion";
 
   let [redirectURL, setRedirURL] = useState("");
   let [isButtonDisabled, setButtonDisabled] = useState(false);
@@ -48,7 +48,7 @@ function Form(props) {
   function submit(e) {
     e.preventDefault();
     Axios.post(
-      url,
+        reservUrl,
       {
         flow_hash: data.flow_hash,
         landing: data.landing,
