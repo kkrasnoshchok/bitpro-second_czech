@@ -10,20 +10,12 @@ import grafik2 from "../../assets/grafik2.png";
 function Form(props) {
   const url = new URL("https://cryp.im/leads");
   const ipForm = props.ipForm;
-  // const reservUrl = "https://cryp.im/api/v1/docs#apiv1webconversion";
+  const reservUrl = "https://cryp.im/api/v1/docs#apiv1webconversion";
 
   let [redirectURL, setRedirURL] = useState("");
   let [isButtonDisabled, setButtonDisabled] = useState(false);
 
-  let headers = {
-    Authorization:
-      "Bearer jNB0Sqebd8sRFpngSk0rLX8sVh7tTLFMmZau6RNQAKyWkxYAUUYqbByZjVF6",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-    // "Access-Control-Allow-Origin": "*",
-    // "Access-Control-Allow-Credentials": true,
-    // "Access-Control-Allow-Methods": 'POST'
-  };
+
 
   const [sent, setSent] = useState(false);
   const [data, setData] = useState({
@@ -45,10 +37,20 @@ function Form(props) {
     }, 100);
   };
 
+  let headers = {
+    Authorization:
+        "Bearer jNB0Sqebd8sRFpngSk0rLX8sVh7tTLFMmZau6RNQAKyWkxYAUUYqbByZjVF6",
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": true,
+    "Access-Control-Allow-Methods": "POST",
+  };
+
   function submit(e) {
     e.preventDefault();
     Axios.post(
-        url,
+      url,
       {
         flow_hash: data.flow_hash,
         landing: data.landing,
@@ -70,7 +72,7 @@ function Form(props) {
         setSent(true);
       })
       .catch(function (error) {
-        // console.log(error);
+        console.log(error.message);
       });
   }
 

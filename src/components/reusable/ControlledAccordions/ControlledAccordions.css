@@ -7,6 +7,11 @@
     font-size: 12px;
 }
 
+.MuiTypography-root.MuiTypography-body1.css-frejtb-MuiTypography-root {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
     margin: 0 !important;
 }
@@ -20,8 +25,7 @@
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-    box-shadow: 3px 3px 5px #BABECC, -5px -5px 10px #FFF !important;
-    color: #003d82 !important;
-    text-shadow: 1px 1px 0 #FFF !important;
-    background: #003d822f !important;
+    color: #fff !important;
+    /* text-shadow: 1px 1px 0 #FFF !important; */
+    background: #003d8294 !important;
 }

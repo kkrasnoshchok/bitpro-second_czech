@@ -9,11 +9,6 @@ import net2 from "../../assets/net2.png";
 
 function Conclusion(props) {
   const [loading, setLoading] = useState(false);
-  const { setGameState } = useContext(QuizContext);
-
-  let setQuizState = () => {
-    setGameState("reg");
-  };
 
   // hook useEffect для лоадера
   useEffect(() => {
@@ -83,9 +78,9 @@ function Conclusion(props) {
               </p>
             </div> */}
             <div className="mainButton conclusionButton">
-              <button onClick={setQuizState}>
+              <a href="https://cashflowtop.com/go/61b9cf1e2079100024">
                 <p>Registrace účtu</p>
-              </button>
+              </a>
             </div>
           </main>
         </div>

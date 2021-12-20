@@ -31,7 +31,7 @@
   background: #0050a1;
 }
 
-.conclusionDescription p  {
+.conclusionDescription p {
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -51,12 +51,15 @@
   animation: startButtonAnimation 2s infinite linear;
 }
 
-.conclusionButton button {
-  display: block;
+.conclusionButton a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 8px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: bold;
   letter-spacing: normal;
 }
 

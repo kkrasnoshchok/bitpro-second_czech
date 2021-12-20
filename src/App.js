@@ -14,7 +14,7 @@ import Form from "./components/Form/Form";
 
 // declaring App function
 function App() {
-  const [gameState, setGameState] = useState("reg");
+  const [gameState, setGameState] = useState("start");
   //creating IP state
   const [ip, setIP] = useState("");
 

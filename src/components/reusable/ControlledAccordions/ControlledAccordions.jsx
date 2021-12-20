@@ -26,7 +26,7 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: "95%", flexShrink: 0 }}>
+          <Typography sx={{ width: "90%", flexShrink: 0 }}>
             1. Po registraci
           </Typography>
           {/* <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography> */}
